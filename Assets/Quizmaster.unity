@@ -292,6 +292,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &264171649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1006632434736805065, guid: ccb32ed54dcbd9748b0446f7855e54bb, type: 3}
+  m_PrefabInstance: {fileID: 172663410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &435436021
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +618,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715770022}
   m_CullTransparentMesh: 1
+--- !u!1 &744735289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1006632434736805065, guid: ccb32ed54dcbd9748b0446f7855e54bb, type: 3}
+  m_PrefabInstance: {fileID: 1117216139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &907990565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1006632434736805065, guid: ccb32ed54dcbd9748b0446f7855e54bb, type: 3}
+  m_PrefabInstance: {fileID: 8217519870155203614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &937607764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +1018,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 909621050901109347, guid: ccb32ed54dcbd9748b0446f7855e54bb, type: 3}
   m_PrefabInstance: {fileID: 1117216139}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1396229020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1006632434736805065, guid: ccb32ed54dcbd9748b0446f7855e54bb, type: 3}
+  m_PrefabInstance: {fileID: 693252471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1536920706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,6 +1203,7 @@ GameObject:
   - component: {fileID: 1880996209}
   - component: {fileID: 1880996208}
   - component: {fileID: 1880996207}
+  - component: {fileID: 1880996211}
   m_Layer: 5
   m_Name: Quiz Canvas
   m_TagString: Untagged
@@ -1273,6 +1294,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1880996211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880996206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0ad8869bf21784d9b28e760319f626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionText: {fileID: 1069180409}
+  question: {fileID: 11400000, guid: d5f42a522ee6a50438f0e8ba18de24ef, type: 2}
+  answerButtons:
+  - {fileID: 907990565}
+  - {fileID: 744735289}
+  - {fileID: 264171649}
+  - {fileID: 1396229020}
 --- !u!1 &1964918248
 GameObject:
   m_ObjectHideFlags: 0
