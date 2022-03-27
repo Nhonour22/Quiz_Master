@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12497595a773bb4e8843c0ebbcde6f3, type: 3}
   m_Name: Question 5
   m_EditorClassIdentifier: 
-  question: Enter new Question text here
+  question: Who was the original lead guitarist for Metallica?
+  answers:
+  - Slash
+  - Angus Young
+  - Kirk Hammet
+  - Dave Mustaine
+  correctAnswerIndex: 3
