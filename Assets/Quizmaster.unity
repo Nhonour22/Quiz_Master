@@ -720,6 +720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 899268968}
+  - component: {fileID: 899268969}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -742,6 +743,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &899268969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899268967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ea1538645634d4497e1bfc9e001b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToCompleteQuestion: 15
+  timeToShowCorrectAnswer: 5
+  loadNextQuestion: 0
+  fillFraction: 0
+  isAnsweringQustion: 0
 --- !u!1 &907990565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1006632434736805065, guid: ccb32ed54dcbd9748b0446f7855e54bb, type: 3}
@@ -1547,7 +1565,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: {fileID: 1069180409}
-  question: {fileID: 11400000, guid: d5f42a522ee6a50438f0e8ba18de24ef, type: 2}
+  questions:
+  - {fileID: 11400000, guid: d5f42a522ee6a50438f0e8ba18de24ef, type: 2}
+  - {fileID: 11400000, guid: c1a60cf37f1d56c43948b1b51826e2a0, type: 2}
+  - {fileID: 11400000, guid: f8b862494f2bb0743b76d3b628c4ee82, type: 2}
+  - {fileID: 11400000, guid: cd3d9e2281a35da46994664a86333b63, type: 2}
+  - {fileID: 11400000, guid: a4f16c16464a33c4999e6d5ea3400e43, type: 2}
   answerButtons:
   - {fileID: 907990565}
   - {fileID: 744735289}
@@ -1555,6 +1578,7 @@ MonoBehaviour:
   - {fileID: 1396229020}
   defaultAnswerSprite: {fileID: 21300000, guid: 2d4c92554ee35bd4faf40fcb3038dfff, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: a7d0c783a6f7f8b47b5d13983c256352, type: 3}
+  timerImage: {fileID: 1133287528}
 --- !u!1 &1964918248
 GameObject:
   m_ObjectHideFlags: 0
