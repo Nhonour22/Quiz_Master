@@ -22,16 +22,16 @@ public class Quiz_1 : MonoBehaviour
     
     [Header("Timer")]
     [SerializeField] Image timerImage;
-     Timer timer;
+    Timer timer;
 
-     [Header("Scoring")]
-     [SerializeField] TextMeshProUGUI scoreText;
-     Score_Keeper scoreKeeper;
+    [Header("Scoring")]
+    [SerializeField] TextMeshProUGUI scoreText;
+    Score_Keeper scoreKeeper;
 
-     [Header("Progress Bar")]
-     [SerializeField] Slider progressBar;
-     public bool isComplete;
-     void Start()
+    [Header("Progress Bar")]
+    [SerializeField] Slider progressBar;
+    public bool isComplete;
+     void Awake()
     {
         timer = FindObjectOfType<Timer>();
         scoreKeeper = FindObjectOfType<Score_Keeper>();
@@ -47,6 +47,7 @@ public class Quiz_1 : MonoBehaviour
             if(progressBar.value == progressBar.maxValue)
             {
                 isComplete = true;
+                return;
             }
             hasAnsweredEarly = false;
             GetNextQuestion();
